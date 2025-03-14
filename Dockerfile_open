@@ -1,4 +1,4 @@
-FROM maven:3.9.9-amazoncorretto-21-al2023 AS build
+FROM maven:3.9.9-eclipse-temurin-21 AS build
 
 WORKDIR /opt/test
 
@@ -18,3 +18,4 @@ COPY entrypoint.sh ./
 RUN chmod +x ./*.sh
 
 CMD ["./entrypoint.sh"]
+

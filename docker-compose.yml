@@ -7,5 +7,10 @@ services:
       context: .
       dockerfile: Dockerfile
 
+  mytest_eclipse:
+    build:
+      context: .
+      dockerfile: Dockerfile_open
+
 networks:
   default:

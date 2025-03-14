@@ -1,5 +1,7 @@
 #!/bin/bash
 set -e
 
-java -Dreactor.schedulers.defaultBoundedElasticOnVirtualThreads=true -jar test-jvm-latest.jar
+echo $(java -version)
+
+java -Dreactor.schedulers.defaultBoundedElasticOnVirtualThreads=true -jar target/test-jvm-*.jar
 
