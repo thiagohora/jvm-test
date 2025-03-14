@@ -1,0 +1,11 @@
+name: mytest
+
+services:
+
+  mytest:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+networks:
+  default:
